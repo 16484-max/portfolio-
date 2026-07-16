@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Home</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family: "Prompt", sans-serif;
+        }
+
+        body{
+            background:linear-gradient(135deg,#2563eb,#60a5fa);
+            color:white;
+        }
+
+        nav{
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            padding:20px 8%;
+            background:rgba(255,255,255,.1);
+            backdrop-filter:blur(10px);
+        }
+
+        nav h2{
+            font-size:28px;
+        }
+
+        nav ul{
+            display:flex;
+            list-style:none;
+        }
+
+        nav ul li{
+            margin-left:25px;
+        }
+
+        nav ul li a{
+            text-decoration:none;
+            color:white;
+            font-weight:500;
+            transition:.3s;
+        }
+
+        nav ul li a:hover{
+            color:yellow;
+        }
+
+        .hero{
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            height:85vh;
+            text-align:center;
+            flex-direction:column;
+        }
+
+        .hero img{
+            width:220px;
+            height:220px;
+            border-radius:50%;
+            object-fit:cover;
+            border:6px solid white;
+            margin-bottom:25px;
+        }
+
+        .hero h1{
+            font-size:48px;
+            margin-bottom:15px;
+        }
+
+        .hero h3{
+            font-size:25px;
+            margin-bottom:15px;
+        }
+
+        .hero p{
+            max-width:700px;
+            line-height:1.8;
+            font-size:18px;
+            margin-bottom:30px;
+        }
+
+        .btn{
+            display:inline-block;
+            background:white;
+            color:#2563eb;
+            text-decoration:none;
+            padding:14px 35px;
+            border-radius:30px;
+            font-weight:bold;
+            transition:.3s;
+        }
+
+        .btn:hover{
+            background:#1d4ed8;
+            color:white;
+        }
+
+        footer{
+            text-align:center;
+            padding:20px;
+            background:rgba(0,0,0,.2);
+        }
+    </style>
+</head>
+
+<body>
+
+<nav>
+
+    <h2>My Portfolio</h2>
+
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="personal.html">Personal</a></li>
+        <li><a href="education.html">Education</a></li>
+        <li><a href="activities.html">Activities</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+
+</nav>
+
+<section class="hero">
+
+    <img src="images/profile.jpg" alt="Profile">
+
+    <h1>สวัสดีครับ 👋</h1>
+
+    <h3>ผม นาย ธาวิน เรืองศรีอ่อน</h3>
+
+    <p>
+        ยินดีต้อนรับสู่เว็บไซต์ Portfolio ของผม
+        เว็บไซต์นี้จัดทำขึ้นเพื่อรวบรวมประวัติส่วนตัว
+        ประวัติการศึกษา กิจกรรม ผลงาน และช่องทางการติดต่อ
+        เพื่อใช้ประกอบการศึกษาต่อในระดับอุดมศึกษา
+    </p>
+
+    <a href="personal.html" class="btn">เริ่มต้นรับชม</a>
+
+</section>
+
+<footer>
+
+    © 2026 My Portfolio | Designed by Your Name
+
+</footer>
+
+</body>
+</html>
