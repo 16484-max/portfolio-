@@ -1,157 +1,80 @@
 <!DOCTYPE html>
 <html lang="th">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio | Home</title>
-
-    <link rel="stylesheet" href="style.css">
-
-    <style>
-        *{
-            margin:0;
-            padding:0;
-            box-sizing:border-box;
-            font-family: "Prompt", sans-serif;
-        }
-
-        body{
-            background:linear-gradient(135deg,#2563eb,#60a5fa);
-            color:white;
-        }
-
-        nav{
-            display:flex;
-            justify-content:space-between;
-            align-items:center;
-            padding:20px 8%;
-            background:rgba(255,255,255,.1);
-            backdrop-filter:blur(10px);
-        }
-
-        nav h2{
-            font-size:28px;
-        }
-
-        nav ul{
-            display:flex;
-            list-style:none;
-        }
-
-        nav ul li{
-            margin-left:25px;
-        }
-
-        nav ul li a{
-            text-decoration:none;
-            color:white;
-            font-weight:500;
-            transition:.3s;
-        }
-
-        nav ul li a:hover{
-            color:yellow;
-        }
-
-        .hero{
-            display:flex;
-            justify-content:center;
-            align-items:center;
-            height:85vh;
-            text-align:center;
-            flex-direction:column;
-        }
-
-        .hero img{
-            width:220px;
-            height:220px;
-            border-radius:50%;
-            object-fit:cover;
-            border:6px solid white;
-            margin-bottom:25px;
-        }
-
-        .hero h1{
-            font-size:48px;
-            margin-bottom:15px;
-        }
-
-        .hero h3{
-            font-size:25px;
-            margin-bottom:15px;
-        }
-
-        .hero p{
-            max-width:700px;
-            line-height:1.8;
-            font-size:18px;
-            margin-bottom:30px;
-        }
-
-        .btn{
-            display:inline-block;
-            background:white;
-            color:#2563eb;
-            text-decoration:none;
-            padding:14px 35px;
-            border-radius:30px;
-            font-weight:bold;
-            transition:.3s;
-        }
-
-        .btn:hover{
-            background:#1d4ed8;
-            color:white;
-        }
-
-        footer{
-            text-align:center;
-            padding:20px;
-            background:rgba(0,0,0,.2);
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio ของ ธาวิน เรืองศรีอ่อน</title>
+<link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<nav>
+<div class="mobile-bar">
+  <span class="brand-name">ธาวิน เรืองศรีอ่อน</span>
+  <button aria-label="เปิดเมนู">&#9776;</button>
+</div>
 
-    <h2>My Portfolio</h2>
+<div class="shell">
+  <aside class="sidebar">
+    <div class="brand">
+      <span class="brand-mark">TR</span>
+      <span class="brand-name">ธาวิน<br>เรืองศรีอ่อน</span>
+    </div>
+    <nav>
+      <a href="index.html" aria-current="page">หน้าหลัก</a>
+      <a href="personal.html">ประวัติส่วนตัว</a>
+      <a href="education.html">ประวัติการศึกษา</a>
+      <a href="activities.html">ผลงาน</a>
+      <a href="contact.html">ติดต่อ</a>
+    </nav>
+    <div class="sidebar-foot">&copy; 2026 Portfolio</div>
+  </aside>
 
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="personal.html">Personal</a></li>
-        <li><a href="education.html">Education</a></li>
-        <li><a href="activities.html">Activities</a></li>
-        <li><a href="contact.html">Contact</a></li>
-    </ul>
+  <main>
+    <section class="hero">
+      <div class="hero-photo-wrap">
+        <!-- เปลี่ยนรูปได้ที่ personal.html ด้วย -->
+        <img class="hero-photo" src="images/มิกซ์.png" alt="รูปธาวิน เรืองศรีอ่อน">
+        <span class="hero-photo-badge">มิกเซอร์</span>
+      </div>
+      <div>
+        <h1>Portfolio ของ <br><span class="accent">ธาวิน เรืองศรีอ่อน</span></h1>
+        <p class="lede">นักเรียนชั้นมัธยมศึกษาปีที่ 6 เว็บไซต์นี้รวบรวมประวัติส่วนตัว ประวัติการศึกษา และผลงานไว้ในที่เดียว เพื่อใช้แนะนำตัวสำหรับการศึกษาต่อและโอกาสต่างๆ</p>
+        <div class="hero-cta">
+          <a href="personal.html" class="btn btn-solid">ดูประวัติส่วนตัว</a>
+          <a href="contact.html" class="btn btn-ghost">ช่องทางการติดต่อ</a>
+        </div>
+      </div>
+    </section>
 
-</nav>
+    <section>
+      <div class="quick-grid">
+        <a class="quick-card" href="personal.html">
+          <span class="qnum">01</span>
+          <h3>ประวัติส่วนตัว</h3>
+          <p>ข้อมูลทั่วไปและรูปภาพ</p>
+        </a>
+        <a class="quick-card" href="education.html">
+          <span class="qnum">02</span>
+          <h3>ประวัติการศึกษา</h3>
+          <p>เส้นทางการเรียนตั้งแต่อดีตถึงปัจจุบัน</p>
+        </a>
+        <a class="quick-card" href="activities.html">
+          <span class="qnum">03</span>
+          <h3>ผลงาน</h3>
+          <p>ผลงานและกิจกรรมที่เคยทำ</p>
+        </a>
+        <a class="quick-card" href="contact.html">
+          <span class="qnum">04</span>
+          <h3>ติดต่อ</h3>
+          <p>ช่องทางการติดต่อ</p>
+        </a>
+      </div>
+    </section>
 
-<section class="hero">
+    <footer>&copy; 2026 ธาวิน เรืองศรีอ่อน — Portfolio Website</footer>
+  </main>
+</div>
 
-    <img src="images/profile.jpg" alt="Profile">
-
-    <h1>สวัสดีครับ 👋</h1>
-
-    <h3>ผม นาย ธาวิน เรืองศรีอ่อน</h3>
-
-    <p>
-        ยินดีต้อนรับสู่เว็บไซต์ Portfolio ของผม
-        เว็บไซต์นี้จัดทำขึ้นเพื่อรวบรวมประวัติส่วนตัว
-        ประวัติการศึกษา กิจกรรม ผลงาน และช่องทางการติดต่อ
-        เพื่อใช้ประกอบการศึกษาต่อในระดับอุดมศึกษา
-    </p>
-
-    <a href="personal.html" class="btn">เริ่มต้นรับชม</a>
-
-</section>
-
-<footer>
-
-    © 2026 My Portfolio | Designed by Your Name
-
-</footer>
-
+<script src="script.js"></script>
 </body>
 </html>
